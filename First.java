@@ -13,7 +13,7 @@ public class First {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-         int n = sc.nextInt();
+        // int n = sc.nextInt();
         //String s = sc.nextLine();
         // int p = sc.nextInt();
         // int t = sc.nextInt();
@@ -21,12 +21,18 @@ public class First {
         // int num1 = sc.nextInt();
         // int num2 = sc.nextInt();
         //int n = sc.nextInt();
-        sc.close();
+       
         First a = new First();
         
+
+        int start = sc.nextInt();
+        int end = sc.nextInt();
+         a.noOfArmstrongs(start, end);
+        
+        
   
-        int ans = a.fibonacci(n);
-        System.out.println(ans);
+        // int ans = a.fibonacci(n);
+        // System.out.println(ans);
         // double ans = a.convertToUSD(n);
         // System.out.println(ans);
         // int ans = a.largeNum(num1,num2);
@@ -37,6 +43,7 @@ public class First {
         // System.out.println(ans);
         //String ans = a.isOddEven(n);
         //System.out.println(ans);
+        sc.close();
     }
 
     // 1)Write a program to print whether a number is even or odd, also take input from the user.
@@ -90,5 +97,29 @@ public class First {
             count++;
         }
         return b;
+    }
+
+    // 9)To find Armstrong Number between two given number.
+
+    public void noOfArmstrongs(int start,int end){
+        for(int i=start;i<=end;i++){
+            if(isArmstrong(i)){
+                System.out.println(i);            }
+        }
+        
+    }
+
+    public boolean isArmstrong(int n){
+        int original = n;
+        double sum = 0;
+        while(n>0){
+            int rem = n%10;
+            n=n/10;
+            sum =  sum + Math.pow(rem,3);
+        }
+        if(sum==original){
+            return true;
+        }
+        return false;
     }
 }
