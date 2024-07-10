@@ -44,14 +44,15 @@ public class ConditionalLoops {
         // System.out.println(ans);
         // cl.largestNumberOfAll();
         // cl.sumOfallNumbers();
-        // int n =  sc.nextInt();
-        // cl.factorsOfANumber(n);
-        // int n =  sc.nextInt();
+        int n =  sc.nextInt();
+        cl.factorsOfANumber(n);
+        //int n =  sc.nextInt();
         // int ans = cl.subtractProductAndSumOfDigits(n);
         // System.out.println(ans);
         //  cl.fibonacciSeries(n);
         //  System.out.println("Enter the base of the triangle : ");
         //  double b = sc.nextInt();
+
         //  System.out.println("Enter the height of the triangle : ");
         //  double h = sc.nextInt();
         //  double ans = cl.areaOfIsoscelesTriangle(b,h);
@@ -126,12 +127,11 @@ public int subtractProductAndSumOfDigits(int n){
 }
 // 23)Input a number and print all the factors of that number (use loops).
 public void factorsOfANumber(int n){
-    int fact = 1;
-    for(int i=1;i<=n;i++){
-        fact = fact * i;
-        
+    for(int i =1;i<=n;i++){
+        if(n%i==0){
+            System.out.print(i+" ");
+        }
     }
-    System.out.println(fact);
 }
 
 
