@@ -38,19 +38,36 @@ public class ConditionalLoops {
         ConditionalLoops cl = new ConditionalLoops();
 
 
-         System.out.println("Enter the length of the rectangle : ");
-         double l = sc.nextInt();
-         System.out.println("Enter the width of the rectangle : ");
-         double w = sc.nextInt();
-        double ans = cl.areaOfRectangle(l,w);
-        System.out.println("Area of the Rectangle : "+ans);
+        // int a = sc.nextInt();
+        // int b = sc.nextInt();
+        // int ans = cl.additionOftwoNumber(a, b);
+        // System.out.println(ans);
+        // cl.largestNumberOfAll();
+        // cl.sumOfallNumbers();
+        // int n =  sc.nextInt();
+        // cl.factorsOfANumber(n);
+        // int n =  sc.nextInt();
+        // int ans = cl.subtractProductAndSumOfDigits(n);
+        // System.out.println(ans);
+        //  cl.fibonacciSeries(n);
+        //  System.out.println("Enter the base of the triangle : ");
+        //  double b = sc.nextInt();
+        //  System.out.println("Enter the height of the triangle : ");
+        //  double h = sc.nextInt();
+        //  double ans = cl.areaOfIsoscelesTriangle(b,h);
+        //  System.out.println("Area of the Isoscele triangle is : " + ans);
+        //  System.out.println("Enter the length of the rectangle : ");
+        //  double l = sc.nextInt();
+        //  System.out.println("Enter the width of the rectangle : ");
+        //  double w = sc.nextInt();
+        // double ans = cl.areaOfRectangle(l,w);
+        // System.out.println("Area of the Rectangle : "+ans);
         // System.out.println("Enter the base of the triangle : ");
         // double b = sc.nextInt();
         // System.out.println("Enter the height of the triangle : ");
         // double h = sc.nextInt();
         // double ans = cl.areaOfTriangle(b,h);
         // System.out.println("Area of the triangle is : " + ans);
-
         // System.out.println("Enter the radius of a circle : ");
         // double radius = sc.nextDouble();
         // double ans = cl.areaOfCircle(radius);
@@ -69,5 +86,86 @@ public class ConditionalLoops {
      public double areaOfRectangle(double l,double w){
           return l*w;
      }
+      // 4)Area Of Isosceles Triangle
+      public double areaOfIsoscelesTriangle(double b,double h){
+        return 0.5*b*h;
+    }
+    // 21)Fibonacci Series In Java Programs
+    public void fibonacciSeries(int n){
+        int a = 0;
+        int b = 1;
+        int count = 2;
+        if(n==0) System.out.println("Enter number above 0");
+        if(n==1) System.out.println(0);
+        if(n==2) System.out.print(0+" "+1);
+        if(n>2){
+            System.out.print(0+" "+1);
+        while(count<n){
+            int temp = b;
+            b=b+a;
+            a=temp;
+            count++;
+            
+            System.out.print(" " + b + " ");
+        }
+    }
+    }
+
+// 22)Subtract the Product and Sum of Digits of an Integer
+public int subtractProductAndSumOfDigits(int n){
+    int rem = 0;
+    int sum = 0;
+    int product = 1;
+    while(n>0){
+        rem = n%10;
+        n = n/10;
+        sum = sum + rem;
+        product = product*rem;
+    }
+    return product-sum;
+}
+// 23)Input a number and print all the factors of that number (use loops).
+public void factorsOfANumber(int n){
+    int fact = 1;
+    for(int i=1;i<=n;i++){
+        fact = fact * i;
+        
+    }
+    System.out.println(fact);
+}
+
+
+ // 24)Take integer inputs till the user enters 0 and print the sum of all numbers (HINT: while loop)
+ public void sumOfallNumbers(){
+    Scanner ss = new Scanner(System.in);
+    int sum = 0;
+    int n = ss.nextInt();
+    while(n!=0){
+        sum = sum + n;
+        n = ss.nextInt();
+    }
+    System.out.println("Sum of all the number that the user entered is "+ sum);
+    ss.close();
+ }
+ // 25)Take integer inputs till the user enters 0 and print the largest number from all.
+ public void largestNumberOfAll(){
+    Scanner ss = new Scanner(System.in);
+    int n = ss.nextInt();
+    int largest = Integer.MIN_VALUE;
+    while(n!=0){
+        if(n>largest){
+            largest = n;
+            n=ss.nextInt();
+
+
+    }
+ }
+ System.out.println("The largest number of all that the user entered is "+largest);
+ ss.close();
+}
+// 26)Addition Of Two Numbers
+public int additionOftwoNumber(int a,int b){
+    return a+b;
+}
     
 }
