@@ -68,8 +68,12 @@ public class ConditionalLoops {
 
 
 
-
-
+        System.out.println("Enter the length of the Parallelogram : ");
+         double l = sc.nextInt();
+         System.out.println("Enter the width of the Parallelogram : ");
+         double w = sc.nextInt();
+        double ans = cl.areaOfParallelogram(l,w);
+        System.out.println("Area of the Parallelogram : "+ans);
         // double p = sc.nextInt();
         // double d = sc.nextInt();
         // double ans = cl.discount(p,d);
@@ -159,6 +163,11 @@ public class ConditionalLoops {
       public double areaOfIsoscelesTriangle(double b,double h){
         return 0.5*b*h;
     }
+     // 5)Area Of Parallelogram
+     public double areaOfParallelogram(double l,double w){
+        return l*w;
+   }
+
     // 21)Fibonacci Series In Java Programs
     public void fibonacciSeries(int n){
         int a = 0;
