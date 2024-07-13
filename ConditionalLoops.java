@@ -1,9 +1,9 @@
 // Basic Java Programs
-    // 1)Area Of Circle Java Program
-    // 2)Area Of Triangle
-    // 3)Area Of Rectangle Program
-    // 4)Area Of Isosceles Triangle
-    // 5)Area Of Parallelogram
+    // 1)Area Of Circle Java Program  (COMPLETED)
+    // 2)Area Of Triangle  (COMPLETED)
+    // 3)Area Of Rectangle Program   (COMPLETED)
+    // 4)Area Of Isosceles Triangle  (COMPLETED)
+    // 5)Area Of Parallelogram   (COMPLETED)
     // 6)Area Of Rhombus
     // 7)Area Of Equilateral Triangle
     // 8)Perimeter Of Circle
@@ -67,14 +67,22 @@ public class ConditionalLoops {
 
 
 
-
-        System.out.println("Enter the length of the Parallelogram : ");
-         double l = sc.nextInt();
-         System.out.println("Enter the width of the Parallelogram : ");
-         double w = sc.nextInt();
-        double ans = cl.areaOfParallelogram(l,w);
+        System.out.println("Enter the length of the first diagonal of rhombus : ");
+         double p = sc.nextInt();
+         System.out.println("Enter the length of the second diagonal of rhombus: ");
+         double q = sc.nextInt();
+        double ans = cl.areaOfRhombus(p,q);
         System.out.println("Area of the Parallelogram : "+ans);
         // double p = sc.nextInt();
+
+
+        // System.out.println("Enter the length of the Parallelogram : ");
+        //  double l = sc.nextInt();
+        //  System.out.println("Enter the width of the Parallelogram : ");
+        //  double w = sc.nextInt();
+        // double ans = cl.areaOfParallelogram(l,w);
+        // System.out.println("Area of the Parallelogram : "+ans);
+        // // double p = sc.nextInt();
         // double d = sc.nextInt();
         // double ans = cl.discount(p,d);
         // System.out.println("the discount price of the item : "+ ans);
@@ -167,6 +175,10 @@ public class ConditionalLoops {
      public double areaOfParallelogram(double l,double w){
         return l*w;
    }
+   // 6) Area Of Rhombus
+   public double areaOfRhombus(double p,double q){
+    return (p*q)/2;
+}
 
     // 21)Fibonacci Series In Java Programs
     public void fibonacciSeries(int n){
