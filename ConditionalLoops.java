@@ -4,7 +4,7 @@
     // 3)Area Of Rectangle Program   (COMPLETED)
     // 4)Area Of Isosceles Triangle  (COMPLETED)
     // 5)Area Of Parallelogram   (COMPLETED)
-    // 6)Area Of Rhombus
+    // 6)Area Of Rhombus    (COMPLETED)
     // 7)Area Of Equilateral Triangle
     // 8)Perimeter Of Circle
     // 9)Perimeter Of Equilateral Triangle
@@ -67,12 +67,12 @@ public class ConditionalLoops {
 
 
 
-        System.out.println("Enter the length of the first diagonal of rhombus : ");
-         double p = sc.nextInt();
-         System.out.println("Enter the length of the second diagonal of rhombus: ");
-         double q = sc.nextInt();
-        double ans = cl.areaOfRhombus(p,q);
-        System.out.println("Area of the Parallelogram : "+ans);
+        // System.out.println("Enter the length of the first diagonal of rhombus : ");
+        //  double p = sc.nextInt();
+        //  System.out.println("Enter the length of the second diagonal of rhombus: ");
+        //  double q = sc.nextInt();
+        // double ans = cl.areaOfRhombus(p,q);
+        // System.out.println("Area of the Parallelogram : "+ans);
         // double p = sc.nextInt();
 
 
@@ -181,7 +181,7 @@ public class ConditionalLoops {
 }
 
     // 21)Fibonacci Series In Java Programs
-    public void fibonacciSeries(int n){
+    public void fibonacciSeries(int n){ 
         int a = 0;
         int b = 1;
         int count = 2;
