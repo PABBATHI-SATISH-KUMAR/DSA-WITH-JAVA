@@ -13,7 +13,7 @@ public class First {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        // int n = sc.nextInt();
+        int n = sc.nextInt();
         //String s = sc.nextLine();
         // int p = sc.nextInt();
         // int t = sc.nextInt();
@@ -25,14 +25,14 @@ public class First {
         First a = new First();
         
 
-        int start = sc.nextInt();
-        int end = sc.nextInt();
-         a.noOfArmstrongs(start, end);
+        // int start = sc.nextInt();
+        // int end = sc.nextInt();
+        //  a.noOfArmstrongs(start, end);
         
         
   
-        // int ans = a.fibonacci(n);
-        // System.out.println(ans);
+        int ans = a.fibonacci(n);
+        System.out.println(ans);
         // double ans = a.convertToUSD(n);
         // System.out.println(ans);
         // int ans = a.largeNum(num1,num2);
