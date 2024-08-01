@@ -13,11 +13,11 @@ public class First {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+        // int n = sc.nextInt();
         //String s = sc.nextLine();
-        // int p = sc.nextInt();
-        // int t = sc.nextInt();
-        // int r = sc.nextInt();
+        int p = sc.nextInt();
+        int t = sc.nextInt();
+        int r = sc.nextInt();
         // int num1 = sc.nextInt();
         // int num2 = sc.nextInt();
         //int n = sc.nextInt();
@@ -31,14 +31,14 @@ public class First {
         
         
   
-        int ans = a.fibonacci(n);
-        System.out.println(ans);
+        // int ans = a.fibonacci(n);
+        // System.out.println(ans);
         // double ans = a.convertToUSD(n);
         // System.out.println(ans);
-        // int ans = a.largeNum(num1,num2);
+        // // int ans = a.largeNum(num1,num2);
         // System.out.println(ans);
-        // double ans = a.simpleIntrest(p,t,r);
-        // System.out.println(ans);
+        double ans = a.simpleIntrest(p,t,r);
+        System.out.println(ans);
         // String ans = a.greeting(s);
         // System.out.println(ans);
         //String ans = a.isOddEven(n);
