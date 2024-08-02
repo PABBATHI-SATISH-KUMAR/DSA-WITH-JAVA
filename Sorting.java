@@ -3,6 +3,7 @@
 //3) write the code for insertion sort 
 //4) Write the code for quicksort
 //5) Write the code for mergesort
+//6) Write the code for the Cyclic Sort
 
 
 import java.util.Arrays;
@@ -12,14 +13,16 @@ public class Sorting {
         Scanner sc = new Scanner(System.in);
         //Sorting ob = new Sorting();
         
-        int arr[] = {4,5,1,2,3,8,9};
-        mergeSortInPlace(arr,0,arr.length-1);
-        System.out.println("Array after sorted  "+Arrays.toString(arr));
+        int arr[] = {3,5,2,1,4};
+        cyclicSort(arr);
+        // // mergeSortInPlace(arr,0,arr.length-1);
+         System.out.println("Array after sorted  "+Arrays.toString(arr));
         // int low = 0;
         // int high = arr.length-1;
         // quickSort(arr,low,high);
-        // bubbleSort(arr);
+         //bubbleSort(arr);
         // selectionSort(arr);
+        // System.out.println("Array after sorted  "+Arrays.toString(arr));
         //insertionSort(arr);
         sc.close();
     }
@@ -200,6 +203,24 @@ public static void mergeInPlace(int arr[], int s,int mid,int e){
     }
 
 }
+
+//6) Write the code for the Cyclic Sort
+public static void cyclicSort(int[] arr) {
+    int i = 0;
+    while(i<arr.length){
+        int correct = arr[i] -1 ;
+        if(arr[i]!=arr[correct]){
+            swap(arr,i,correct);
+        }
+        else{
+            i++;
+        }
+    }
 }
+
+}
+
+
+
     
 
