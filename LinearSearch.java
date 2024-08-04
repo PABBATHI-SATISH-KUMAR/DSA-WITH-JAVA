@@ -9,16 +9,6 @@ public class LinearSearch {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         LinearSearch ob = new LinearSearch();
-
-
-
-
-
-
-
-
-
-
         System.out.println("Enter the row size of the matrix : ");
         int row = sc.nextInt();
         System.out.println("Enter the column size of the matrix : ");
