@@ -125,7 +125,6 @@ public int orderAgnosticBinarySearch(int arr[], int target) {
             }
         }
     }
-
     return -1;
 }
 //3)Write the code for binarysearch in 2D arrays
