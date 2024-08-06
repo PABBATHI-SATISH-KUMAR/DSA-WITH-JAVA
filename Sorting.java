@@ -13,7 +13,7 @@ public class Sorting {
         Scanner sc = new Scanner(System.in);
         //Sorting ob = new Sorting();
         
-        int arr[] = {3,5,2,1,4};
+        int arr[] = {43,8,14,28,4,4,15,31,0};
         cyclicSort(arr);
         // // mergeSortInPlace(arr,0,arr.length-1);
          System.out.println("Array after sorted  "+Arrays.toString(arr));
@@ -34,9 +34,9 @@ public class Sorting {
 //1) Write the code for bubble sort
 public static void bubbleSort(int[] arr){
     boolean swapped;
-    for(int i = 0;i<arr.length;i++){
+    for(int i = 0;i<arr.length;i++){     
         swapped = false;
-        for(int j = 1;j<arr.length-1;j++){
+        for(int j = 1;j<arr.length-1;j++){    
             if(arr[j]<arr[j-1]){
                 int temp = arr[j];
                 arr[j] = arr[j-1];
@@ -143,7 +143,7 @@ public static int[] merge(int[] first,int[] second){
             mix[k] = first[i];
             i++;
         }else{
-            mix[k] = second[j];
+            mix[k] = second[j];        
             j++;
         }
         k++;
