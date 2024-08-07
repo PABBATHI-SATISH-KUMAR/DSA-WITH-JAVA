@@ -24,6 +24,7 @@
 // 24) Boyer Moore Algorithm(Majority Element) 
 // 25) two Sum problem 
 // 26) maximumsum subarray of size k
+// 27) Find the number of moves to move all even to the start and odd at the end
 
 
 
@@ -32,6 +33,9 @@ import java.util.HashMap;
 
 public class Arrays { 
     public static void main(String args[]){
+        int[] arr = {1, 2, 3, 4, 5, 6};
+        moveStartEnd(arr);
+
         //         Scanner sc = new Scanner(System.in);
         //         int n = sc.nextInt();
         //         int a[] = new int[n];
@@ -49,7 +53,7 @@ public class Arrays {
         //              System.out.print(c[i]+" ,");
         //          }
                 //5)printArr(a);
-                int a[] = {1,2,3,4,5,6,7,8,9,10};
+                // int a[] = {1,2,3,4,5,6,7,8,9,10};
                 //revArr(a);
                
                 // System.out.println("The largest number in");
@@ -79,7 +83,7 @@ public class Arrays {
             //   for(int i :a){
             //       System.out.print(i+" ");
             //   }
-             leftRotate(a);
+            //  leftRotate(a);
             //rightRotateArray(a);
             //16)getThirdLargest(a);
             //2)frequencyOfItems(a);
@@ -509,8 +513,28 @@ public class Arrays {
         return maxSum;
 
     }
+
+    // 27) Find the number of moves to move all even to the start and odd at the end ?
     
-    
+    public static void moveStartEnd(int arr[]){
+        int n = arr.length;
+        int[] temp = new int[n];
+        int even = 0, odd = n - 1;
+        for (int i = 0; i < n; i++) {
+        if (arr[i] % 2 == 0) {
+            temp[even++] = arr[i];
+        } else {
+            temp[odd--] = arr[i];
+        }
+    }
+    for (int i = 0; i < n; i++) {
+        arr[i] = temp[i];
+    }
+    System.out.println("Array after moving all even numbers to the start and odd numbers to the end:");
+        for (int i = 0; i < n; i++) {
+            System.out.print(arr[i] + " ");
+        }
+}
 
    
     }
