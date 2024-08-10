@@ -154,7 +154,7 @@ public class Arrays {
 
    
     // 3) Java Program to left rotate the elements of an array
-   public static void leftRotate(int a[]){
+   public static void leftRotate(int a[]){ 
     for(int i = 0;i<3;i++){
         int first = a[0];
         for(int j=0;j<a.length-1;j++){
