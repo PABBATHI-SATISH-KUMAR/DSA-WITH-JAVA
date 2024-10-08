@@ -324,8 +324,6 @@ public class Arrays {
     
         System.out.println("Third largest number: " + large3);
     }
-    
-       
     // 17) Find 2nd Largest Number in an Array
     public static void getSecondlargest(int a[]){
         int large1 = Integer.MIN_VALUE;

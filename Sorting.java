@@ -5,9 +5,6 @@
 //5) Write the code for mergesort
 //6) Write the code for the Cyclic Sort
 
-
-import java.util.Arrays;
-import java.util.Scanner;
 public class Sorting {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -220,7 +217,4 @@ public static void cyclicSort(int[] arr) {
 
 }
 
-
-
-    
-
+// write a java program to add two numbers using functions 

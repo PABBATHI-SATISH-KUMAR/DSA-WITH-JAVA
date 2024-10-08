@@ -1,3 +1,5 @@
 public class Hashmap{
-    psvm
+    public static void main(String[] args) {
+        
+    }
 }
