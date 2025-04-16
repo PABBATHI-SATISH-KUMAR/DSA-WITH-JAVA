@@ -25,16 +25,17 @@ public class First {
 
         // int ans = a.largeNum(num1, num2);
         // System.out.println("Largest number is: " + ans);
-        System.out.println("Enter the string : ");
-        String s = sc.nextLine();
-        a.isPalindrome(s);
-        if (a.isPalindrome(s)) {
-            System.out.println("The string is a palindrome.");
-        } else {
-            System.out.println("The string is not a palindrome.");
-        }
+        // System.out.println("Enter the string : ");
+        
+        // a.isPalindrome(s);
+        // if (a.isPalindrome(s)) {
+        //     System.out.println("The string is a palindrome.");
+        // } else {
+        //     System.out.println("The string is not a palindrome.");
+        // }
+       
 
-        sc.close();
+        
 
         
         // int n = sc.nextInt();
@@ -42,7 +43,8 @@ public class First {
         // int p = sc.nextInt();
         // int t = sc.nextInt();
         // int r = sc.nextInt();
-        // int n = sc.nextInt();
+        System.out.println("Enter a number: ");
+        int n = sc.nextInt();
         // int start = sc.nextInt();
         // int end = sc.nextInt();
         // a.noOfArmstrongs(start, end);
@@ -54,13 +56,15 @@ public class First {
         // System.out.println(ans);
         // String ans = a.greeting(s);
         // System.out.println(ans);
-        // String ans = a.isOddEven(n);
+         String ans = a.isOddEven(n);
+        System.out.println(ans);
         // System.out.println(ans);
+        sc.close();
     }
 
     // 1)Write a program to print whether a number is even or odd
     public String isOddEven(int n) {
-        if ((n % 2) == 0) {
+        if ((n & 1) == 0) {
             return "Even";
         } else {
             return "Odd";

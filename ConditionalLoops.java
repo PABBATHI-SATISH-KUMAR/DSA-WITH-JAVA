@@ -195,7 +195,6 @@ public class ConditionalLoops {
             b=b+a;
             a=temp;
             count++;
-            
             System.out.print(" " + b + " ");
         }
     }
