@@ -15,20 +15,28 @@ public class First {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        // Uncomment below lines to take user input for largeNum function
-        System.out.print("Enter first number: ");
-        int num1 = sc.nextInt();
-        System.out.print("Enter second number: ");
-        int num2 = sc.nextInt();
+        
+        // System.out.print("Enter first number: ");
+        // int num1 = sc.nextInt();
+        // System.out.print("Enter second number: ");
+        // int num2 = sc.nextInt();
 
         First a = new First();
 
-        int ans = a.largeNum(num1, num2);
-        System.out.println("Largest number is: " + ans);
+        // int ans = a.largeNum(num1, num2);
+        // System.out.println("Largest number is: " + ans);
+        System.out.println("Enter the string : ");
+        String s = sc.nextLine();
+        a.isPalindrome(s);
+        if (a.isPalindrome(s)) {
+            System.out.println("The string is a palindrome.");
+        } else {
+            System.out.println("The string is not a palindrome.");
+        }
 
         sc.close();
 
-        // Examples (Don't run these now):
+        
         // int n = sc.nextInt();
         // String s = sc.nextLine();
         // int p = sc.nextInt();
@@ -96,6 +104,21 @@ public class First {
         }
         return b;
     }
+
+    // 8)To find out whether the given String is Palindrome or not
+    public boolean isPalindrome(String s) {
+        int i = 0;
+        int j = s.length() - 1;
+        while (i < j) {
+            if (s.charAt(i) != s.charAt(j)) {
+                return false;
+            }
+            i++;
+            j--;
+        }
+        return true;
+    }
+
 
     // 9)Armstrong numbers between two values
     public void noOfArmstrongs(int start, int end) {

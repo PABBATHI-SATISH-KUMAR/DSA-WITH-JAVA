@@ -5,19 +5,23 @@
 //5) Write the code for mergesort
 //6) Write the code for the Cyclic Sort
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Sorting {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         //Sorting ob = new Sorting();
         
         int arr[] = {43,8,14,28,4,4,15,31,0};
-        cyclicSort(arr);
+
+        //cyclicSort(arr);
         // // mergeSortInPlace(arr,0,arr.length-1);
-         System.out.println("Array after sorted  "+Arrays.toString(arr));
+         System.out.println("Array before sorted  "+Arrays.toString(arr));
         // int low = 0;
         // int high = arr.length-1;
         // quickSort(arr,low,high);
-         //bubbleSort(arr);
+         bubbleSort(arr);
         // selectionSort(arr);
         // System.out.println("Array after sorted  "+Arrays.toString(arr));
         //insertionSort(arr);
