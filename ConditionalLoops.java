@@ -112,7 +112,7 @@ public class ConditionalLoops {
     // int b = sc.nextInt();
     // int ans = cl.distanceBetweenwtwoPoints(a,b);
     // System.out.println("The distance between two pints is : "+ans);
-        // cl.averageOfNNumbers();
+        cl.averageOfNNumbers();
 
         // int n = sc.nextInt();
         // cl.factorialOfANumber(n);
@@ -234,7 +234,7 @@ public void factorsOfANumber(int n){
     }
     System.out.println("Sum of all the number that the user entered is "+ sum);
     ss.close();
- }
+}
  // 25)Take integer inputs till the user enters 0 and print the largest number from all.
  public void largestNumberOfAll(){
     Scanner ss = new Scanner(System.in);
@@ -284,10 +284,7 @@ public void averageOfNNumbers(){
         String s = ss.next();
         if(s.equals("exit")){
            break;
-       
-        
         }
-
     }
     int avg = (sum)/count;
     System.out.println("The average of the numbers is "+avg);
