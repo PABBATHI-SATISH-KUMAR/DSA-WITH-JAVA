@@ -64,6 +64,14 @@ public class BasicPrograms {
             System.out.println(temp+"is not a palindrome number");
         }
     }
+    // 4) Factorial Program in Java
+    public void factorial(int n){
+        int fact = 1;
+        for(int i = 1;i<=n;i++){
+            fact *= i;
+        }
+        System.out.println("Factorial of " + n + " is: " + fact);
+    }
     public static void main(String[] args) {
         BasicPrograms bp = new BasicPrograms();
         // int n = 10; // Example input for Fibonacci series
@@ -74,8 +82,8 @@ public class BasicPrograms {
         // System.out.println();
         // int primeCheck = 29; 
         // bp.prime_number(primeCheck);
-        int n = 121;
-        bp.Palindrome(n);
+        // int n = 121;
+        // bp.Palindrome(n);
         
         // int n2 = 123;
         // bp.Palindrome(n2);
@@ -85,6 +93,8 @@ public class BasicPrograms {
         
         // int n4 = 5;
         // bp.Palindrome(n4); // Single digit
+        int factNum = 5;
+        bp.factorial(factNum); // Example input for factorial
         
 
     }
