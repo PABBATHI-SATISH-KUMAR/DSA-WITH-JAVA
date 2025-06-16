@@ -25,6 +25,28 @@ public class BasicPrograms {
             }
             return b;
         }
+        // 2) Prime Number Program in Java
+        
+        
+    }
+    public void prime_number(int n) {
+        boolean isPrime = true;
+        if (n <= 1) {
+            isPrime = false;
+        } else {
+            for (int i = 2; i <= Math.sqrt(n); i++) {
+                if (n % i == 0) {
+                    isPrime = false;
+                    break;
+                }
+            }
+        }
+        if (isPrime) {
+            System.out.println(n + " is a prime number.");
+        } else {
+            System.out.println(n + " is not a prime number.");
+        }
+        // 3) Palindrome Program in Java
     }
     public static void main(String[] args) {
         BasicPrograms bp = new BasicPrograms();
@@ -34,7 +56,11 @@ public class BasicPrograms {
             System.out.print(bp.fibonacciseries(i) + " ");
         }
         System.out.println();
+        int primeCheck = 29; 
+        bp.prime_number(primeCheck);
     }
+
+
 }
 
     
