@@ -93,7 +93,7 @@ public class BasicPrograms {
         
         // int n4 = 5;
         // bp.Palindrome(n4); // Single digit
-        int factNum = 5;
+        int factNum = 10;
         bp.factorial(factNum); // Example input for factorial
         
 
