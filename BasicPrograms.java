@@ -46,9 +46,11 @@ public class BasicPrograms {
         } else {
             System.out.println(n + " is not a prime number.");
         }
-        // 3) Palindrome Program in Java
+        
+
         
     }
+    // 3) Palindrome Program in Java
     public void Palindrome(int n){
         int temp = n;
         int sum = 0;
@@ -72,6 +74,49 @@ public class BasicPrograms {
         }
         System.out.println("Factorial of " + n + " is: " + fact);
     }
+    // 5) Armstrong Number in Java
+    public void armstrong(int n) {
+        int originalNumber = n;
+        int result = 0;
+        int digits = 0;
+        
+        while (n != 0) {
+            int digit = n % 10;
+            result += Math.pow(digit, digits);
+            n /= 10;
+        }
+        
+        if (result == originalNumber) {
+            System.out.println(originalNumber + " is an Armstrong number.");
+        } else {
+            System.out.println(originalNumber + " is not an Armstrong number.");
+        }
+    }
+    // 6) How to Generate Random Number in Java
+    public void generateRandomNumber() {
+        int randomNumber = (int) (Math.random() * 100); // Generates a random number between 0 and 99
+        System.out.println("Random Number: " + randomNumber);
+    }
+    // 7) How to Print Pattern in Java
+    public void printPattern(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+    // 8) How to Compare Two Objects in Java
+    public void compareObjects(Object obj1, Object obj2) {
+        if (obj1.equals(obj2)) {
+            System.out.println("Objects are equal.");
+        } else {
+            System.out.println("Objects are not equal.");
+        }
+    }
+    
+
+
     public static void main(String[] args) {
         BasicPrograms bp = new BasicPrograms();
         // int n = 10; // Example input for Fibonacci series

@@ -340,7 +340,7 @@ public boolean isArmstrong(int n){
     while(n>0){
         int rem = n%10;
         n=n/10;
-        sum =  sum + Math.pow(rem,3);
+        sum =  sum + Math.pow(rem,3 );
     }
     if(sum==original){
         return true;
