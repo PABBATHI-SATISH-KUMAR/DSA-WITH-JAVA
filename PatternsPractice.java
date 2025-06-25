@@ -263,6 +263,22 @@ class PatternsPracticeMain{
     }
 
 
+    //16
+    public static void alphaRamp(int n) {
+        // A
+        // B B
+        // C C C
+        
+        for (int rows = 0; rows < n; rows++) {
+             char currentChar = (char) ('A' +rows);
+            for (int cols = 0; cols <= rows; cols++) {
+                System.out.print(currentChar + " "); 
+                
+            }
+            System.out.println(); 
+        }
+    }
+
 
 
     public static void main(String[] args){
@@ -284,6 +300,7 @@ class PatternsPracticeMain{
         //nNumberSequenceTriangle(n);
         //nLetterTriangle(n);
         // nLetterReverseTriangle(n);
+        //alphaRamp(n);
         sc.close();
 
     }
