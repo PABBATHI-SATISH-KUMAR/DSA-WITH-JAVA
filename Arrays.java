@@ -34,7 +34,7 @@ import java.util.HashMap;
 public class Arrays { 
     public static void main(String args[]){
         int[] arr = {1, 2, 3, 4, 5, 6};
-        moveStartEnd(arr);
+        //moveStartEnd(arr);
 
         //         Scanner sc = new Scanner(System.in);
         //         int n = sc.nextInt();
@@ -118,6 +118,9 @@ public class Arrays {
             // }
         
             // maximumSumSubarray(K,Arr,N);
+
+            maxNumInArray(arr);
+            minNumInArray(arr);
              
     }
     //1)Java Program to copy all elements of one array into another array
@@ -533,6 +536,29 @@ public class Arrays {
             System.out.print(arr[i] + " ");
         }
 }
+
+//28 wap to find the max value of an array
+public static void maxNumInArray(int[] a) {
+		int max = Integer.MIN_VALUE;
+		for(int i:a) {
+			if(i>max) {
+				max=i;
+			}
+		}
+		System.out.println(max);
+	}
+
+// 29 WAP to find the min value of an array
+public static void minNumInArray(int[] a) {
+		int min = Integer.MAX_VALUE;
+		for(int i:a) {
+			if(i<min) {
+				min=i;
+			}
+		}
+		System.out.println(min);
+	}
+
 
    
     }
