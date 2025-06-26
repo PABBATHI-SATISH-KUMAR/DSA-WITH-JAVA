@@ -33,7 +33,7 @@ import java.util.HashMap;
 
 public class Arrays { 
     public static void main(String args[]){
-        int[] arr = {1, 2, 3, 4, 5, 6};
+        int[] arr = {8,5,4,3,2};
         //moveStartEnd(arr);
 
         //         Scanner sc = new Scanner(System.in);
@@ -83,7 +83,7 @@ public class Arrays {
             //   for(int i :a){
             //       System.out.print(i+" ");
             //   }
-            //  leftRotate(a);
+            // leftRotate(arr);
             //rightRotateArray(a);
             //16)getThirdLargest(a);
             //2)frequencyOfItems(a);
@@ -119,8 +119,8 @@ public class Arrays {
         
             // maximumSumSubarray(K,Arr,N);
 
-            maxNumInArray(arr);
-            minNumInArray(arr);
+            // maxNumInArray(arr);
+            // minNumInArray(arr);
              
     }
     //1)Java Program to copy all elements of one array into another array
@@ -399,7 +399,7 @@ public class Arrays {
         }
 
     // 22) Maximum Sum Sub Array (Kadane's Algorithm)
- public static int kadanesAlgorithm(int[] a){
+public static int kadanesAlgorithm(int[] a){
         int currentSum=0;
         int maxSum=Integer.MIN_VALUE;
         int start=0;
